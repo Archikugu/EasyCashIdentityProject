@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33620.401
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{E5480A13-0F81-44F7-B4B1-600961D5A425}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{E5480A13-0F81-44F7-B4B1-600961D5A425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{DAF72721-455D-48F4-A476-DD2C2AE35D15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{DAF72721-455D-48F4-A476-DD2C2AE35D15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{119D0147-44EE-4E24-84AF-E4B7DCBD35AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{119D0147-44EE-4E24-84AF-E4B7DCBD35AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{08FD9145-BE9E-46AC-85EB-73621A33B59C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO", "DTO\DTO.csproj", "{08FD9145-BE9E-46AC-85EB-73621A33B59C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCash.UI", "EasyCash.UI\EasyCash.UI.csproj", "{C247F378-2AD2-4330-8577-4E4CDC3EB9E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCash.UI", "EasyCash.UI\EasyCash.UI.csproj", "{C247F378-2AD2-4330-8577-4E4CDC3EB9E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
