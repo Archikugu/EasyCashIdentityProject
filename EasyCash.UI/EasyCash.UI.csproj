@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\gentela-gh-pages\vendors\Chart.js\.github\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\gentela-gh-pages\vendors\Chart.js\.github\PULL_REQUEST_TEMPLATE.md" />
+    <None Include="wwwroot\gentela-gh-pages\vendors\echarts\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\gentela-gh-pages\vendors\echarts\.github\ISSUE_TEMPLATE.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
