@@ -36,4 +36,8 @@
     <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\ConfirmMailController\" />
+  </ItemGroup>
+
 </Project>
