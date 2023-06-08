@@ -26,7 +26,6 @@ namespace EasyCash.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(ConfirmMailViewModel confirmMailViewModel)
         {
-            var value = TempData["Mail"];
             var user = await _userManager.FindByEmailAsync(confirmMailViewModel.Mail);
             if (user.ConfirmCode == confirmMailViewModel.ConfirmCode)
             {
