@@ -37,7 +37,13 @@ namespace EasyCash.UI.Controllers
             sendMoneyForCustomerProcessDto.ProcessType = "Remittance";
             sendMoneyForCustomerProcessDto.ReceiverID = receiverAccountNumberID;
 
-            // _customerAccountProcessService.TInsert();
+            var values = new CustomerAccountProcess();
+            values.ProcessDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            values.SenderID = 1;
+            values.ProcessType = "Remittance";
+            values.ReceiverID = receiverAccountNumberID;
+            values.Amount = sendMoneyForCustomerProcessDto.Amount;
+            _customerAccountProcessService.TInsert(values);
 
             return RedirectToAction("Index", "Deneme");
         }
