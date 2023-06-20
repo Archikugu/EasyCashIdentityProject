@@ -32,14 +32,11 @@ namespace EasyCash.UI.Controllers
 
             var receiverAccountNumberID = context.CustomerAccounts.Where(x => x.CustomerAccountNumber == sendMoneyForCustomerProcessDto.ReceiverAccountNumber).Select(y => y.CustomerAccountID).FirstOrDefault();
 
-            sendMoneyForCustomerProcessDto.SenderID = user.Id;
-            sendMoneyForCustomerProcessDto.ProcessDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-            sendMoneyForCustomerProcessDto.ProcessType = "Remittance";
-            sendMoneyForCustomerProcessDto.ReceiverID = receiverAccountNumberID;
+            var senderAccountNumberID = context.CustomerAccounts.Where(x => x.AppUserID == user.Id).Where(y => y.CustomerAccountCurrency == "Turkish Lira").Select(z => z.CustomerAccountID).FirstOrDefault();
 
             var values = new CustomerAccountProcess();
             values.ProcessDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-            values.SenderID = 1;
+            values.SenderID = senderAccountNumberID;
             values.ProcessType = "Remittance";
             values.ReceiverID = receiverAccountNumberID;
             values.Amount = sendMoneyForCustomerProcessDto.Amount;
@@ -47,5 +44,7 @@ namespace EasyCash.UI.Controllers
 
             return RedirectToAction("Index", "Deneme");
         }
+        [HttpGet]
+
     }
 }
