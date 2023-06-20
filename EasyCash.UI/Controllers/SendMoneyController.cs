@@ -34,12 +34,14 @@ namespace EasyCash.UI.Controllers
 
             var senderAccountNumberID = context.CustomerAccounts.Where(x => x.AppUserID == user.Id).Where(y => y.CustomerAccountCurrency == "Turkish Lira").Select(z => z.CustomerAccountID).FirstOrDefault();
 
+
             var values = new CustomerAccountProcess();
             values.ProcessDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             values.SenderID = senderAccountNumberID;
             values.ProcessType = "Remittance";
             values.ReceiverID = receiverAccountNumberID;
             values.Amount = sendMoneyForCustomerProcessDto.Amount;
+            values.Description = sendMoneyForCustomerProcessDto.Description;
             _customerAccountProcessService.TInsert(values);
 
             return RedirectToAction("Index", "Deneme");
