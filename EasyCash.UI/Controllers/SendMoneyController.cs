@@ -19,8 +19,9 @@ namespace EasyCash.UI.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string myCurrency)
         {
+            ViewBag.Currency = myCurrency;
             return View();
         }
         [HttpPost]
@@ -46,7 +47,7 @@ namespace EasyCash.UI.Controllers
 
             return RedirectToAction("Index", "Deneme");
         }
-        [HttpGet]
+        //[HttpGet]
 
     }
 }
