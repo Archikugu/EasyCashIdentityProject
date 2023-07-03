@@ -3,10 +3,73 @@
     Layout = "~/Views/CustomerLayout/Index.cshtml";
 }
 
-<h2>Easy Cash Exchange Page</h2>
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Easy Cash Exchange Page - @DateTime.Now.ToShortDateString()</h3>
+            </div>
+        </div>
 
-<p>Dolar - Turkish Lira : @ViewBag.UsdToTry</p>
-<p>Euro - Turkish Lira : @ViewBag.EurToTry</p>
-<p>Great Britain Pound - Turkish Lira : @ViewBag.GbpToTry</p>
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <div class="x_content">
+                        <div class="row">
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-caret-square-o-right"></i>
+                                    </div>
+                                    <div class="count">@ViewBag.UsdToTry</div>
+
+                                    <h3>Dolar - Turkish Lira</h3>
+                                    <p>
+                                        Instant $ - ₺ rate
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-comments-o"></i>
+                                    </div>
+                                    <div class="count">@ViewBag.EurToTry</div>
+
+                                    <h3>Euro - Turkish Lira</h3>
+                                    <p>Instant € - ₺ rate</p>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-sort-amount-desc"></i>
+                                    </div>
+                                    <div class="count">@ViewBag.GbpToTry</div>
+
+                                    <h3>Pound - Turkish Lira</h3>
+                                    <p>Instant £ - ₺ rate</p>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-check-square-o"></i>
+                                    </div>
+                                    <div class="count">@ViewBag.UsdToEur</div>
+
+                                    <h3>Dolar - Euro</h3>
+                                    <p>Instant $ - € rate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
